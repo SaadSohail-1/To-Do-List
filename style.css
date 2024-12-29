@@ -1,0 +1,116 @@
+html{
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(16,2,75,1) 20%, rgba(0,212,255,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    font-family: Tahoma, sans-serif;
+    color:#090979;
+}
+
+.container{
+    background-color:white;
+    border-radius: 10px;
+    width: 30vw;
+    height: 60vh;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.input-container{
+    height: 50px;
+    justify-content: flex-start;
+    background-color: rgb(215, 215, 215);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.tasks{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-color: aliceblue;
+    /* display: flex; */
+    flex-direction: column;
+    overflow-y: scroll;
+    font-size: 16px;
+    font-family: Tomaha, sans-serif;
+    scrollbar-width: none;
+    /* gap: 10px; */
+    word-break: break-word;
+    border-radius: 5px;
+}
+
+.task-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputfield{
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background:rgb(215, 215, 215);
+    font-size: 16px;
+    margin-left: 10px;
+}
+.inputfield:focus{
+    border: none;
+    outline: none;
+}
+.addBtn{
+    width: 20%;
+    padding: 10px;
+    height: 100%;
+    background-color: #0000ff;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.addBtn:active, .clearBtn:active{
+    background-color:rgb(4, 4, 135);
+}
+
+.up-btn{
+    position: absolute;
+    background-image: url(/assets/up-arrow_12335178.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border:1px solid;
+    border-radius: 20px;
+    bottom: 160px;
+    left: 48%;
+    background-color: rgb(6, 6, 193);
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.clearBtn{
+   position: absolute;
+    margin:10px 0 0 3px;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    background-color:#0000ff;
+    cursor: pointer;
+    display: none;
+}
+
+.up-btn.active , .clearBtn.active{
+    display: block;
+}
